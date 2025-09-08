@@ -4,6 +4,12 @@
 	}
 }
 
+@media (max-width: 1280px) {
+	.training-types-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 @media (max-width: 1024px) {
 	.header {
 		flex-wrap: wrap;
@@ -85,5 +91,19 @@
 
 	.motivation-card-description:not(:last-child) {
 		margin-bottom: 20px;
+	}
+
+	.training-types-list {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	.training-types-item {
+		--trainingTypesItemBgIconSize: 50px;
+		row-gap: 10px;
+	}
+
+	.training-types-image {
+		max-width: 120px;
 	}
 }
